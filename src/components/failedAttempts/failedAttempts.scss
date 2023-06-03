@@ -1,0 +1,18 @@
+@import '../../assets/scss_styles/global-imports';
+
+.failCounter {
+   height: 100%;
+   color: $clr_red;
+   font-size: 1.2rem;
+   font-weight: 700;
+   @include flex-center-vert;
+   gap: .5rem;
+
+   .failCounterValue {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      border: 2px solid $clr_red;
+      @include flex-center;
+   }
+}

@@ -1,0 +1,40 @@
+@mixin absolute-horizon() {
+   position: absolute;
+   right: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+@mixin flex-column {
+   display: flex;
+   flex-direction: column;
+}
+
+@mixin flex-center {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+@mixin flex-center-vert {
+   display: flex;
+   align-items: center;
+}
+
+@mixin _768 {
+   @media (max-width: 768px) {
+      @content;
+   }
+}
+
+@mixin _576 {
+   @media (max-width: 576px) {
+      @content;
+   }
+}
+
+@mixin _350 {
+   @media (max-width: 350px) {
+      @content;
+   }
+}

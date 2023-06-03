@@ -1,0 +1,41 @@
+@import '../../assets/scss_styles/global-imports';
+
+.word {
+   @include flex-center;
+   gap: .5rem;
+   height: 4rem;
+
+
+   .letter {
+      border-bottom: 5px solid $clr_black;
+      font-size: 3rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      width: 3rem;
+      height: 4rem;
+      text-align: center;
+      transform: scaleY(1.3);
+
+      @include _576 {
+         font-size: 2rem;
+         width: 2rem;
+         height: 3rem;
+      }
+
+      @include _350 {
+         font-size: 1.5rem;
+         width: 1.5rem;
+         height: 2rem;
+
+      }
+   }
+
+   .winnerColor {
+      color: $clr_main;
+   }
+
+   .looserColor {
+      color: $clr_red;
+   }
+
+}

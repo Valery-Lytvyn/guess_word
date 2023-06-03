@@ -1,0 +1,35 @@
+@import '../../assets/scss_styles/global-imports';
+
+.keyboard {
+   padding: 0 2rem;
+   @include flex-center;
+   gap: .5rem;
+   flex-wrap: wrap;
+
+   .button {
+      height: 4rem;
+      width: 4rem;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      @include flex-center;
+      border-radius: 5px;
+      background: transparent;
+
+      &:hover {
+         background-color: $clr_white;
+      }
+
+      @include _576 {
+         height: 2rem;
+         width: 2rem;
+      }
+   }
+
+   .wrongBtn {
+      background: $clr_red
+   }
+
+   .correctBtn {
+      background: $clr_main;
+   }
+}
